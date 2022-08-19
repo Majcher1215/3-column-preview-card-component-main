@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* Primary Colors */
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+    /* Neutral */
+    --transparentWhite: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+    --veryLightGray: hsl(0, 0%, 95%); /* background, headings, buttons */
+}
+
+#brightOrange {
+    background-color: var(--brightOrange);
+}
+
+#brightOrangeText {
+    color: var(--brightOrange);
+}
+
+#darkCyan {
+    background-color: var(--darkCyan);
+}
+
+#darkCyanText {
+    color: var(--darkCyan);
+}
+
+#veryDarkCyan {
+    background-color: var(--veryDarkCyan);
+}
+
+#veryDarkCyanText {
+    color: var(--veryDarkCyan);
+}
+
+
+body {
+    width: 100vw;
+    height: 100em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: "Lexend Deca", sans-serif;
+    background-color: var(--veryLightGray);
+}
+
+.offer-cards {
+    width: 87.5%;
+    background-color: antiquewhite;
+}
+
+.offer-card {
+    padding-bottom: 4em;
+}
+
+.offer-card > *{
+    color: var(--transparentWhite);
+    margin: 2em 3em 1em 3em;
+}
+
+.offer-card p {
+    margin-bottom: 3em;
+}
+
+.offer-card h1 {
+    color: var(--veryLightGray);
+    text-transform: uppercase;
+    font-size: 2.5em;
+    margin: 0.5em 1.25em;
+    font-family: 'Big Shoulders Display', sans-serif;
+}
+
+.button {
+    text-decoration: none;
+    padding: 1em 2em;
+    background-color: var(--veryLightGray);
+    border-radius: 4em;
+}
+
+.button:hover {
+    color: var(--veryLightGray) !important; 
+    border: 0.25em solid var(--veryLightGray);
+    background-color: transparent;
+}
+
+/* iPads, Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    .offer-cards {
+        width: 80%;
+    }
+}
+
+/* Laptops */
+@media (min-width: 769px) and (max-width: 1300px){
+    .offer-cards {
+        width: 60%;
+    }
+}
+
+/* Desktop and Large */
+@media (min-width: 1301px) {
+    .offer-cards {
+        display: flex;
+        width: 60%;
+    }
+
+    .offer-card p {
+        margin-bottom: 8em;
+    }
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
