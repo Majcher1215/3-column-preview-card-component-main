@@ -13,6 +13,10 @@
     --veryLightGray: hsl(0, 0%, 95%); /* background, headings, buttons */
 }
 
+html {
+    height: 100%;
+}
+
 #brightOrange {
     background-color: var(--brightOrange);
 }
@@ -40,7 +44,7 @@
 
 body {
     width: 100vw;
-    height: 100em;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,7 +118,6 @@ body {
         margin-bottom: 8em;
     }
 }
-
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
