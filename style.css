@@ -63,6 +63,14 @@ body {
     padding-bottom: 4em;
 }
 
+.offer-card:nth-child(1) {
+    border-radius: 1em 0 0 1em;
+}
+
+.offer-card:nth-child(3) {
+    border-radius: 0 1em 1em 0;
+}
+
 .offer-card > *{
     color: var(--transparentWhite);
     margin: 2em 3em 1em 3em;
